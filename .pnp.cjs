@@ -10,7 +10,7 @@ const RAW_RUNTIME_STATE =
   ],\
   "dependencyTreeRoots": [\
     {\
-      "name": "client",\
+      "name": "@daehwahap/client",\
       "reference": "workspace:."\
     },\
     {\
@@ -26,10 +26,6 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/eslint-config"\
     },\
     {\
-      "name": "@repo/typescript-config",\
-      "reference": "workspace:packages/typescript-config"\
-    },\
-    {\
       "name": "@repo/ui",\
       "reference": "workspace:packages/ui"\
     }\
@@ -37,10 +33,9 @@ const RAW_RUNTIME_STATE =
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
+    ["@daehwahap/client", ["workspace:."]],\
     ["@repo/eslint-config", ["workspace:packages/eslint-config"]],\
-    ["@repo/typescript-config", ["workspace:packages/typescript-config"]],\
     ["@repo/ui", ["workspace:packages/ui"]],\
-    ["client", ["workspace:."]],\
     ["docs", ["workspace:apps/docs"]],\
     ["web", ["workspace:apps/web"]]\
   ],\
@@ -52,9 +47,9 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@repo/eslint-config", "workspace:packages/eslint-config"],\
-          ["@repo/typescript-config", "workspace:packages/typescript-config"],\
           ["prettier", "npm:3.2.5"],\
-          ["turbo", "npm:1.13.0"]\
+          ["turbo", "npm:1.13.0"],\
+          ["typescript", "patch:typescript@npm%3A5.4.3#optional!builtin<compat/typescript>::version=5.4.3&hash=5adc0c"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -400,6 +395,19 @@ const RAW_RUNTIME_STATE =
           ["@jridgewell/trace-mapping", "npm:0.3.9"]\
         ],\
         "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@daehwahap/client", [\
+      ["workspace:.", {\
+        "packageLocation": "./",\
+        "packageDependencies": [\
+          ["@daehwahap/client", "workspace:."],\
+          ["@repo/eslint-config", "workspace:packages/eslint-config"],\
+          ["prettier", "npm:3.2.5"],\
+          ["turbo", "npm:1.13.0"],\
+          ["typescript", "patch:typescript@npm%3A5.4.3#optional!builtin<compat/typescript>::version=5.4.3&hash=5adc0c"]\
+        ],\
+        "linkType": "SOFT"\
       }]\
     ]],\
     ["@eslint-community/eslint-utils", [\
@@ -785,22 +793,12 @@ const RAW_RUNTIME_STATE =
         "linkType": "SOFT"\
       }]\
     ]],\
-    ["@repo/typescript-config", [\
-      ["workspace:packages/typescript-config", {\
-        "packageLocation": "./packages/typescript-config/",\
-        "packageDependencies": [\
-          ["@repo/typescript-config", "workspace:packages/typescript-config"]\
-        ],\
-        "linkType": "SOFT"\
-      }]\
-    ]],\
     ["@repo/ui", [\
       ["workspace:packages/ui", {\
         "packageLocation": "./packages/ui/",\
         "packageDependencies": [\
           ["@repo/ui", "workspace:packages/ui"],\
           ["@repo/eslint-config", "workspace:packages/eslint-config"],\
-          ["@repo/typescript-config", "workspace:packages/typescript-config"],\
           ["@turbo/gen", "npm:1.13.0"],\
           ["@types/eslint", "npm:8.56.6"],\
           ["@types/node", "npm:20.11.30"],\
@@ -2248,19 +2246,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["client", [\
-      ["workspace:.", {\
-        "packageLocation": "./",\
-        "packageDependencies": [\
-          ["client", "workspace:."],\
-          ["@repo/eslint-config", "workspace:packages/eslint-config"],\
-          ["@repo/typescript-config", "workspace:packages/typescript-config"],\
-          ["prettier", "npm:3.2.5"],\
-          ["turbo", "npm:1.13.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }]\
-    ]],\
     ["client-only", [\
       ["npm:0.0.1", {\
         "packageLocation": "../../../.yarn/berry/cache/client-only-npm-0.0.1-07d3e9505c-10c0.zip/node_modules/client-only/",\
@@ -2464,7 +2449,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["debug", "virtual:1693719b69872bbdb0e24bcb094f3376d3ba7d7452e4a8feeb281a66ef877506892ff12d112ac0fb8c119821c8e84e7ef1732e04650c281a74d65b33828eb672#npm:3.2.7"],\
           ["@types/supports-color", null],\
-          ["ms", "npm:2.1.3"],\
+          ["ms", "npm:2.1.2"],\
           ["supports-color", null]\
         ],\
         "packagePeers": [\
@@ -2622,7 +2607,6 @@ const RAW_RUNTIME_STATE =
           ["docs", "workspace:apps/docs"],\
           ["@next/eslint-plugin-next", "npm:14.1.4"],\
           ["@repo/eslint-config", "workspace:packages/eslint-config"],\
-          ["@repo/typescript-config", "workspace:packages/typescript-config"],\
           ["@repo/ui", "workspace:packages/ui"],\
           ["@types/eslint", "npm:8.56.6"],\
           ["@types/node", "npm:20.11.30"],\
@@ -5150,13 +5134,6 @@ const RAW_RUNTIME_STATE =
           ["ms", "npm:2.1.2"]\
         ],\
         "linkType": "HARD"\
-      }],\
-      ["npm:2.1.3", {\
-        "packageLocation": "../../../.yarn/berry/cache/ms-npm-2.1.3-81ff3cfac1-10c0.zip/node_modules/ms/",\
-        "packageDependencies": [\
-          ["ms", "npm:2.1.3"]\
-        ],\
-        "linkType": "HARD"\
       }]\
     ]],\
     ["mute-stream", [\
@@ -7228,7 +7205,6 @@ const RAW_RUNTIME_STATE =
           ["web", "workspace:apps/web"],\
           ["@next/eslint-plugin-next", "npm:14.1.4"],\
           ["@repo/eslint-config", "workspace:packages/eslint-config"],\
-          ["@repo/typescript-config", "workspace:packages/typescript-config"],\
           ["@repo/ui", "workspace:packages/ui"],\
           ["@types/eslint", "npm:8.56.6"],\
           ["@types/node", "npm:20.11.30"],\
