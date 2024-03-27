@@ -4,15 +4,24 @@ const project = resolve(process.cwd(), 'tsconfig.json')
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  extends: ['eslint:recommended', 'prettier', 'eslint-config-turbo'],
-  plugins: ['react', '@typescript-eslint'],
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+    'airbnb/hooks',
+    'airbnb-typescript',
+    'prettier',
+    'eslint-config-turbo',
+  ],
   globals: {
     React: true,
     JSX: true,
   },
   env: {
     node: true,
+    browser: true,
+    'react-native/react-native': true,
   },
+  plugins: ['react', 'react-native', '@typescript-eslint'],
   settings: {
     'import/resolver': {
       typescript: {
@@ -20,15 +29,15 @@ module.exports = {
       },
     },
   },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   ignorePatterns: [
     // Ignore dotfiles
     '.*.js',
     'node_modules/',
-    'dist/',
   ],
-  overrides: [
-    {
-      files: ['*.js?(x)', '*.ts?(x)'],
-    },
-  ],
+  overrides: [{ files: ['*.js?(x)', '*.ts?(x)'] }],
 }
