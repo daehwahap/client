@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "jsx": "react",
+    "jsx": "react-jsx",
     "composite": true,
     "declaration": true,
     "declarationMap": true,
