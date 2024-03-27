@@ -229,9 +229,9 @@ const RAW_RUNTIME_STATE =
       ["virtual:4286e12a3a0f74af013bc8f16c6d8fdde823cfbf6389660266b171e551f576c805b0a7a8eb2a7087a5cee7dfe6ebb6e1ea3808d93daf915edc95656907a381bb#npm:4.4.0", {\
         "packageLocation": "./.yarn/__virtual__/@eslint-community-eslint-utils-virtual-1c7da85a1a/4/.yarn/berry/cache/@eslint-community-eslint-utils-npm-4.4.0-d1791bd5a3-10c0.zip/node_modules/@eslint-community/eslint-utils/",\
         "packageDependencies": [\
-          ["@eslint-community/eslint-utils", "virtual:4286e12a3a0f74af013bc8f16c6d8fdde823cfbf6389660266b171e551f576c805b0a7a8eb2a7087a5cee7dfe6ebb6e1ea3808d93daf915edc95656907a381bb#npm:4.4.0"],\
+          ["@eslint-community/eslint-utils", "virtual:1601ab325d56fe5d65a24168ae75a9e6e7a13557162d6ae6f8109068532b094afd3853fe237546f6ca8da9facc0872da3fa350cd4d0c48712fd1d424fb9df4f8#npm:4.4.0"],\
           ["@types/eslint", null],\
-          ["eslint", "npm:8.57.0"],\
+          ["eslint", null],\
           ["eslint-visitor-keys", "npm:3.4.3"]\
         ],\
         "packagePeers": [\
@@ -245,7 +245,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@eslint-community/eslint-utils", "virtual:cd775ef5bfffbe84d382e897a75175c7751af45a52da6705a1d36e0b9bfe7ea52e84660ccbe4d480501f4eef6fae4bb9bbc6ea8352d01798594761b0d17356b7#npm:4.4.0"],\
           ["@types/eslint", null],\
-          ["eslint", null],\
+          ["eslint", "npm:8.57.0"],\
           ["eslint-visitor-keys", "npm:3.4.3"]\
         ],\
         "packagePeers": [\
@@ -1074,7 +1074,6 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:8844cf8e2d2199fbdca9365e8f95c62cd664812801ddf322df57bcc860ef5ad0bb741359a3556629f355fb3391c5cb0ce52ced8745cd49922be6648904d14445#npm:4.3.4"],\
           ["globby", "npm:11.1.0"],\
           ["is-glob", "npm:4.0.3"],\
-          ["minimatch", "npm:9.0.3"],\
           ["semver", "npm:7.6.0"],\
           ["ts-api-utils", "virtual:8844cf8e2d2199fbdca9365e8f95c62cd664812801ddf322df57bcc860ef5ad0bb741359a3556629f355fb3391c5cb0ce52ced8745cd49922be6648904d14445#npm:1.3.0"],\
           ["typescript", "patch:typescript@npm%3A5.4.3#optional!builtin<compat/typescript>::version=5.4.3&hash=5adc0c"]\
@@ -1127,6 +1126,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/types", "npm:7.4.0"],\
           ["@typescript-eslint/typescript-estree", "virtual:cd775ef5bfffbe84d382e897a75175c7751af45a52da6705a1d36e0b9bfe7ea52e84660ccbe4d480501f4eef6fae4bb9bbc6ea8352d01798594761b0d17356b7#npm:7.4.0"],\
           ["eslint", null],\
+          ["eslint-scope", "npm:5.1.1"],\
           ["semver", "npm:7.6.0"]\
         ],\
         "packagePeers": [\
