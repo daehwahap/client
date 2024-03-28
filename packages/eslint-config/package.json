@@ -4,7 +4,9 @@
   "private": true,
   "files": [
     "library.js",
+    "nest.js",
     "next.js",
+    "react-native.js",
     "react.js"
   ],
   "devDependencies": {
