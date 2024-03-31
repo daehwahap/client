@@ -253,6 +253,20 @@ const RAW_RUNTIME_STATE =
           "eslint"\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["virtual:cd775ef5bfffbe84d382e897a75175c7751af45a52da6705a1d36e0b9bfe7ea52e84660ccbe4d480501f4eef6fae4bb9bbc6ea8352d01798594761b0d17356b7#npm:4.4.0", {\
+        "packageLocation": "./.yarn/__virtual__/@eslint-community-eslint-utils-virtual-217af6ffaa/4/.yarn/berry/cache/@eslint-community-eslint-utils-npm-4.4.0-d1791bd5a3-10c0.zip/node_modules/@eslint-community/eslint-utils/",\
+        "packageDependencies": [\
+          ["@eslint-community/eslint-utils", "virtual:cd775ef5bfffbe84d382e897a75175c7751af45a52da6705a1d36e0b9bfe7ea52e84660ccbe4d480501f4eef6fae4bb9bbc6ea8352d01798594761b0d17356b7#npm:4.4.0"],\
+          ["@types/eslint", null],\
+          ["eslint", null],\
+          ["eslint-visitor-keys", "npm:3.4.3"]\
+        ],\
+        "packagePeers": [\
+          "@types/eslint",\
+          "eslint"\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@eslint-community/regexpp", [\
