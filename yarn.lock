@@ -72,6 +72,25 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@daehwahap/web@workspace:apps/web":
+  version: 0.0.0-use.local
+  resolution: "@daehwahap/web@workspace:apps/web"
+  dependencies:
+    "@daehwahap/eslint-config": "npm:*"
+    "@next/eslint-plugin-next": "npm:^14.1.1"
+    "@repo/ui": "workspace:^"
+    "@types/eslint": "npm:^8.56.5"
+    "@types/node": "npm:^20.11.24"
+    "@types/react": "npm:^18.2.61"
+    "@types/react-dom": "npm:^18.2.19"
+    eslint: "npm:^8.57.0"
+    next: "npm:^14.1.1"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
+
 "@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -290,7 +309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@repo/ui@npm:*, @repo/ui@workspace:packages/ui":
+"@repo/ui@npm:*, @repo/ui@workspace:^, @repo/ui@workspace:packages/ui":
   version: 0.0.0-use.local
   resolution: "@repo/ui@workspace:packages/ui"
   dependencies:
@@ -302,7 +321,7 @@ __metadata:
     "@types/react-dom": "npm:^18.2.19"
     eslint: "npm:^8.57.0"
     react: "npm:^18.2.0"
-    typescript: "npm:^5.3.3"
+    typescript: "npm:5.4.3"
   languageName: unknown
   linkType: soft
 
@@ -4647,7 +4666,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.3.3, typescript@npm:^5.4.3":
+"typescript@npm:5.4.3, typescript@npm:^5.3.3, typescript@npm:^5.4.3":
   version: 5.4.3
   resolution: "typescript@npm:5.4.3"
   bin:
@@ -4657,7 +4676,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.3.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.4.3#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A5.4.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.3.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.4.3#optional!builtin<compat/typescript>":
   version: 5.4.3
   resolution: "typescript@patch:typescript@npm%3A5.4.3#optional!builtin<compat/typescript>::version=5.4.3&hash=5adc0c"
   bin:
@@ -4768,25 +4787,6 @@ __metadata:
   checksum: 10c0/5b61ca583a95e2dd85d7078400190efd452e05751a64accb8c06ce4db65d7e0b0cde9917d705e826a2e05cc2548f61efde115ffa374c3e436d04be45c889e5b4
   languageName: node
   linkType: hard
-
-"web@workspace:apps/web":
-  version: 0.0.0-use.local
-  resolution: "web@workspace:apps/web"
-  dependencies:
-    "@daehwahap/eslint-config": "npm:*"
-    "@next/eslint-plugin-next": "npm:^14.1.1"
-    "@repo/ui": "npm:*"
-    "@types/eslint": "npm:^8.56.5"
-    "@types/node": "npm:^20.11.24"
-    "@types/react": "npm:^18.2.61"
-    "@types/react-dom": "npm:^18.2.19"
-    eslint: "npm:^8.57.0"
-    next: "npm:^14.1.1"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    typescript: "npm:^5.3.3"
-  languageName: unknown
-  linkType: soft
 
 "which-boxed-primitive@npm:^1.0.2":
   version: 1.0.2

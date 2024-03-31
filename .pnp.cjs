@@ -18,7 +18,7 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:apps/docs"\
     },\
     {\
-      "name": "web",\
+      "name": "@daehwahap/web",\
       "reference": "workspace:apps/web"\
     },\
     {\
@@ -35,9 +35,9 @@ const RAW_RUNTIME_STATE =
   "fallbackExclusionList": [\
     ["@daehwahap/client", ["workspace:."]],\
     ["@daehwahap/eslint-config", ["virtual:c47115e800a23a5392cdfc4e6017a1f2d8b704228d50c425ddec690d174547aa933f9c3221d88f300409b4fad99355b6856b295833ce2bc9c4d3130b71e9facc#workspace:packages/eslint-config", "virtual:f0d0cd5aaece2ba2f3a78185b2e418b368495e7a6b1c81897edad81a0feb0eb68d6a24daa2f2a094f38e4769fa1fcad5d2a9dbb29adf266de2c4288673c2e748#workspace:packages/eslint-config", "workspace:packages/eslint-config"]],\
+    ["@daehwahap/web", ["workspace:apps/web"]],\
     ["@repo/ui", ["workspace:packages/ui"]],\
-    ["docs", ["workspace:apps/docs"]],\
-    ["web", ["workspace:apps/web"]]\
+    ["docs", ["workspace:apps/docs"]]\
   ],\
   "fallbackPool": [\
   ],\
@@ -179,6 +179,27 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react", "virtual:10238d14fb79bc3c6aee9d393da003877dfc13462c89658dde55c49b2151664092ebbb12b6c4b5ab8e40975e72040f71f88b33d293bb8f3acd13def112a6045e#npm:7.34.1"],\
           ["eslint-plugin-react-hooks", "virtual:10238d14fb79bc3c6aee9d393da003877dfc13462c89658dde55c49b2151664092ebbb12b6c4b5ab8e40975e72040f71f88b33d293bb8f3acd13def112a6045e#npm:4.6.0"],\
           ["eslint-plugin-react-native", "virtual:10238d14fb79bc3c6aee9d393da003877dfc13462c89658dde55c49b2151664092ebbb12b6c4b5ab8e40975e72040f71f88b33d293bb8f3acd13def112a6045e#npm:4.1.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@daehwahap/web", [\
+      ["workspace:apps/web", {\
+        "packageLocation": "./apps/web/",\
+        "packageDependencies": [\
+          ["@daehwahap/web", "workspace:apps/web"],\
+          ["@daehwahap/eslint-config", "virtual:c47115e800a23a5392cdfc4e6017a1f2d8b704228d50c425ddec690d174547aa933f9c3221d88f300409b4fad99355b6856b295833ce2bc9c4d3130b71e9facc#workspace:packages/eslint-config"],\
+          ["@next/eslint-plugin-next", "npm:14.1.4"],\
+          ["@repo/ui", "workspace:packages/ui"],\
+          ["@types/eslint", "npm:8.56.6"],\
+          ["@types/node", "npm:20.11.30"],\
+          ["@types/react", "npm:18.2.71"],\
+          ["@types/react-dom", "npm:18.2.22"],\
+          ["eslint", "npm:8.57.0"],\
+          ["next", "virtual:ba56dc173c7ece72e1480aefcd1d10cda1629de2daa7f61b603fae838675c08883d872a9392eb3e84cc530eed79a8c2786d69c2798b8351fc0bd584f41a8d550#npm:14.1.4"],\
+          ["react", "npm:18.2.0"],\
+          ["react-dom", "virtual:ba56dc173c7ece72e1480aefcd1d10cda1629de2daa7f61b603fae838675c08883d872a9392eb3e84cc530eed79a8c2786d69c2798b8351fc0bd584f41a8d550#npm:18.2.0"],\
+          ["typescript", "patch:typescript@npm%3A5.4.3#optional!builtin<compat/typescript>::version=5.4.3&hash=5adc0c"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -6330,27 +6351,6 @@ const RAW_RUNTIME_STATE =
           ["defaults", "npm:1.0.4"]\
         ],\
         "linkType": "HARD"\
-      }]\
-    ]],\
-    ["web", [\
-      ["workspace:apps/web", {\
-        "packageLocation": "./apps/web/",\
-        "packageDependencies": [\
-          ["web", "workspace:apps/web"],\
-          ["@daehwahap/eslint-config", "virtual:c47115e800a23a5392cdfc4e6017a1f2d8b704228d50c425ddec690d174547aa933f9c3221d88f300409b4fad99355b6856b295833ce2bc9c4d3130b71e9facc#workspace:packages/eslint-config"],\
-          ["@next/eslint-plugin-next", "npm:14.1.4"],\
-          ["@repo/ui", "workspace:packages/ui"],\
-          ["@types/eslint", "npm:8.56.6"],\
-          ["@types/node", "npm:20.11.30"],\
-          ["@types/react", "npm:18.2.71"],\
-          ["@types/react-dom", "npm:18.2.22"],\
-          ["eslint", "npm:8.57.0"],\
-          ["next", "virtual:ba56dc173c7ece72e1480aefcd1d10cda1629de2daa7f61b603fae838675c08883d872a9392eb3e84cc530eed79a8c2786d69c2798b8351fc0bd584f41a8d550#npm:14.1.4"],\
-          ["react", "npm:18.2.0"],\
-          ["react-dom", "virtual:ba56dc173c7ece72e1480aefcd1d10cda1629de2daa7f61b603fae838675c08883d872a9392eb3e84cc530eed79a8c2786d69c2798b8351fc0bd584f41a8d550#npm:18.2.0"],\
-          ["typescript", "patch:typescript@npm%3A5.4.3#optional!builtin<compat/typescript>::version=5.4.3&hash=5adc0c"]\
-        ],\
-        "linkType": "SOFT"\
       }]\
     ]],\
     ["which", [\
