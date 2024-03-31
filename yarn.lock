@@ -55,6 +55,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@daehwahap/eslint-config@workspace:packages/eslint-config"
   dependencies:
+    "@rushstack/eslint-patch": "npm:^1.10.1"
     "@typescript-eslint/eslint-plugin": "npm:^7.1.0"
     "@typescript-eslint/parser": "npm:^7.1.0"
     eslint-config-airbnb: "npm:^19.0.4"
@@ -304,6 +305,13 @@ __metadata:
     typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
+
+"@rushstack/eslint-patch@npm:^1.10.1":
+  version: 1.10.1
+  resolution: "@rushstack/eslint-patch@npm:1.10.1"
+  checksum: 10c0/db96bfdf83ededcd70de41876bfe7ecb2450b93e4c5e46bc0f2bc9dd0e0ea60e8bc5fc0d1d3b6addf902e640ea78855ed77b6c883d0d0d104269492141232995
+  languageName: node
+  linkType: hard
 
 "@swc/helpers@npm:0.5.2":
   version: 0.5.2

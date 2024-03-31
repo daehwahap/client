@@ -1,16 +1,17 @@
-const { resolve } = require('node:path')
+// Workaround for https://github.com/eslint/eslint/issues/3458
+require('@rushstack/eslint-patch/modern-module-resolution')
 
-const project = resolve(process.cwd(), 'tsconfig.json')
-
-/** @type {import("eslint").Linter.Config} */
 module.exports = {
   extends: [
     'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
     'airbnb',
     'airbnb/hooks',
     'airbnb-typescript',
     'prettier',
   ],
+  plugins: ['react', '@typescript-eslint'],
+  parser: '@typescript-eslint/parser',
   globals: {
     React: true,
     JSX: true,
@@ -18,14 +19,6 @@ module.exports = {
   env: {
     node: true,
     browser: true,
-  },
-  plugins: [],
-  settings: {
-    'import/resolver': {
-      typescript: {
-        project,
-      },
-    },
   },
   ignorePatterns: [
     // Ignore dotfiles

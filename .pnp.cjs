@@ -112,6 +112,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@daehwahap-eslint-config-virtual-b2293fba54/1/packages/eslint-config/",\
         "packageDependencies": [\
           ["@daehwahap/eslint-config", "virtual:c47115e800a23a5392cdfc4e6017a1f2d8b704228d50c425ddec690d174547aa933f9c3221d88f300409b4fad99355b6856b295833ce2bc9c4d3130b71e9facc#workspace:packages/eslint-config"],\
+          ["@rushstack/eslint-patch", "npm:1.10.1"],\
           ["@types/eslint", "npm:8.56.6"],\
           ["@types/typescript", null],\
           ["@typescript-eslint/eslint-plugin", "virtual:b2293fba5482f8d206191f77c1dee606d2f0796617b40a6417c75375db8739c7e3e1a4de120d66f253d4eb31b7f68db1730298ec37ac7142946ffe464e44ba45#npm:7.4.0"],\
@@ -139,6 +140,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@daehwahap-eslint-config-virtual-10238d14fb/1/packages/eslint-config/",\
         "packageDependencies": [\
           ["@daehwahap/eslint-config", "virtual:f0d0cd5aaece2ba2f3a78185b2e418b368495e7a6b1c81897edad81a0feb0eb68d6a24daa2f2a094f38e4769fa1fcad5d2a9dbb29adf266de2c4288673c2e748#workspace:packages/eslint-config"],\
+          ["@rushstack/eslint-patch", "npm:1.10.1"],\
           ["@types/eslint", null],\
           ["@types/typescript", null],\
           ["@typescript-eslint/eslint-plugin", "virtual:10238d14fb79bc3c6aee9d393da003877dfc13462c89658dde55c49b2151664092ebbb12b6c4b5ab8e40975e72040f71f88b33d293bb8f3acd13def112a6045e#npm:7.4.0"],\
@@ -166,6 +168,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/eslint-config/",\
         "packageDependencies": [\
           ["@daehwahap/eslint-config", "workspace:packages/eslint-config"],\
+          ["@rushstack/eslint-patch", "npm:1.10.1"],\
           ["@typescript-eslint/eslint-plugin", "virtual:f5c9f6d30452f59b818f3c97a28744865eab496e10497081d19f513d370f085b4e6be9efbd360f4e1a1d9b08caf6fa0c797ef37078e002e654c1fa42f2f86380#npm:7.4.0"],\
           ["@typescript-eslint/parser", "virtual:f5c9f6d30452f59b818f3c97a28744865eab496e10497081d19f513d370f085b4e6be9efbd360f4e1a1d9b08caf6fa0c797ef37078e002e654c1fa42f2f86380#npm:7.4.0"],\
           ["eslint-config-airbnb", "virtual:f5c9f6d30452f59b818f3c97a28744865eab496e10497081d19f513d370f085b4e6be9efbd360f4e1a1d9b08caf6fa0c797ef37078e002e654c1fa42f2f86380#npm:19.0.4"],\
@@ -506,6 +509,15 @@ const RAW_RUNTIME_STATE =
           ["typescript", "patch:typescript@npm%3A5.4.3#optional!builtin<compat/typescript>::version=5.4.3&hash=5adc0c"]\
         ],\
         "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@rushstack/eslint-patch", [\
+      ["npm:1.10.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/@rushstack-eslint-patch-npm-1.10.1-1d202d280b-10c0.zip/node_modules/@rushstack/eslint-patch/",\
+        "packageDependencies": [\
+          ["@rushstack/eslint-patch", "npm:1.10.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/helpers", [\
