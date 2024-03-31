@@ -586,6 +586,26 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@daehwahap/webview@workspace:web/webview":
+  version: 0.0.0-use.local
+  resolution: "@daehwahap/webview@workspace:web/webview"
+  dependencies:
+    "@daehwahap/eslint-config": "workspace:^"
+    "@types/eslint": "npm:^8"
+    "@types/node": "npm:^20"
+    "@types/react": "npm:^18"
+    "@types/react-dom": "npm:^18"
+    autoprefixer: "npm:^10.0.1"
+    eslint: "npm:8.57.0"
+    next: "npm:14.1.4"
+    postcss: "npm:^8"
+    react: "npm:^18"
+    react-dom: "npm:^18"
+    tailwindcss: "npm:^3.3.0"
+    typescript: "npm:5.4.3"
+  languageName: unknown
+  linkType: soft
+
 "@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -9660,26 +9680,6 @@ __metadata:
   checksum: 10c0/c36b86e5aa42f07c865cc5221d88b84bc62267ca2e60edaf69e8fccebe284c8199d352701697546a0fa6599d648a05ea427607e854c61ccc269b9c230fb25efa
   languageName: node
   linkType: hard
-
-"webview@workspace:web/webview":
-  version: 0.0.0-use.local
-  resolution: "webview@workspace:web/webview"
-  dependencies:
-    "@daehwahap/eslint-config": "workspace:^"
-    "@types/eslint": "npm:^8"
-    "@types/node": "npm:^20"
-    "@types/react": "npm:^18"
-    "@types/react-dom": "npm:^18"
-    autoprefixer: "npm:^10.0.1"
-    eslint: "npm:8.57.0"
-    next: "npm:14.1.4"
-    postcss: "npm:^8"
-    react: "npm:^18"
-    react-dom: "npm:^18"
-    tailwindcss: "npm:^3.3.0"
-    typescript: "npm:5.4.3"
-  languageName: unknown
-  linkType: soft
 
 "whatwg-url@npm:^5.0.0":
   version: 5.0.0

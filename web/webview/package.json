@@ -1,5 +1,5 @@
 {
-  "name": "webview",
+  "name": "@daehwahap/webview",
   "version": "0.1.0",
   "private": true,
   "packageManager": "yarn@4.1.1",
