@@ -9,9 +9,7 @@ module.exports = {
     'airbnb',
     'airbnb/hooks',
     'airbnb-typescript',
-    require.resolve('@vercel/style-guide/eslint/next'),
     'prettier',
-    'eslint-config-turbo',
   ],
   globals: {
     React: true,

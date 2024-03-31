@@ -10,7 +10,6 @@ module.exports = {
     'airbnb/hooks',
     'airbnb-typescript',
     'prettier',
-    'eslint-config-turbo',
   ],
   globals: {
     React: true,
