@@ -20,6 +20,7 @@
   "workspaces": [
     "web/*",
     "apps/*",
+    "server/*",
     "packages/*"
   ]
 }
