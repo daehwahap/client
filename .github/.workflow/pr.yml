@@ -1,8 +1,8 @@
-name: Slack Notification
+name: PR Notification
  
 on:
   pull_request:
-    branches: [ "master", "develop" ]
+    branches: [ "main", "develop" ]
  
 jobs:
   build:
