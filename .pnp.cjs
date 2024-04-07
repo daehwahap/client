@@ -1005,6 +1005,7 @@ const RAW_RUNTIME_STATE =
           ["@nestjs/schematics", "virtual:370dfca81dbf286eb0a5b42abeb5507e043c3ba2c3839ff0e45d49f96b030a8fdb8bea6ad74ef836a00cf773d8a5ba0c6a86f3a4f62909c3f8e8a1ca8be3d802#npm:10.1.1"],\
           ["@nestjs/testing", "virtual:370dfca81dbf286eb0a5b42abeb5507e043c3ba2c3839ff0e45d49f96b030a8fdb8bea6ad74ef836a00cf773d8a5ba0c6a86f3a4f62909c3f8e8a1ca8be3d802#npm:10.3.7"],\
           ["@prisma/client", "virtual:370dfca81dbf286eb0a5b42abeb5507e043c3ba2c3839ff0e45d49f96b030a8fdb8bea6ad74ef836a00cf773d8a5ba0c6a86f3a4f62909c3f8e8a1ca8be3d802#npm:5.12.1"],\
+          ["@trpc/server", "npm:10.45.2"],\
           ["@types/eslint", "npm:8.56.6"],\
           ["@types/express", "npm:4.17.21"],\
           ["@types/jest", "npm:29.5.12"],\
@@ -1034,6 +1035,8 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@daehwahap/daehwahap-webview", "workspace:web/daehwahap-webview"],\
           ["@daehwahap/eslint-config", "virtual:c47115e800a23a5392cdfc4e6017a1f2d8b704228d50c425ddec690d174547aa933f9c3221d88f300409b4fad99355b6856b295833ce2bc9c4d3130b71e9facc#workspace:packages/eslint-config"],\
+          ["@trpc/client", "virtual:39545a4d19bf23f85195bd802bf50cf7300c1f718dad5e2a5a432726a1d90a7888cdc4f88a2f46366449f0ca9a5992c3d09f24c0ceb155474b4b603b6655373b#npm:10.45.2"],\
+          ["@trpc/server", "npm:10.45.2"],\
           ["@types/eslint", "npm:8.56.6"],\
           ["@types/node", "npm:20.12.2"],\
           ["@types/react", "npm:18.2.73"],\
@@ -2226,6 +2229,37 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/unplugged/@tootallnate-quickjs-emscripten-npm-0.23.0-a889ea7aeb/node_modules/@tootallnate/quickjs-emscripten/",\
         "packageDependencies": [\
           ["@tootallnate/quickjs-emscripten", "npm:0.23.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@trpc/client", [\
+      ["npm:10.45.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/@trpc-client-npm-10.45.2-52bb18eeb8-10c0.zip/node_modules/@trpc/client/",\
+        "packageDependencies": [\
+          ["@trpc/client", "npm:10.45.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:39545a4d19bf23f85195bd802bf50cf7300c1f718dad5e2a5a432726a1d90a7888cdc4f88a2f46366449f0ca9a5992c3d09f24c0ceb155474b4b603b6655373b#npm:10.45.2", {\
+        "packageLocation": "./.yarn/__virtual__/@trpc-client-virtual-80c9c1112a/4/.yarn/berry/cache/@trpc-client-npm-10.45.2-52bb18eeb8-10c0.zip/node_modules/@trpc/client/",\
+        "packageDependencies": [\
+          ["@trpc/client", "virtual:39545a4d19bf23f85195bd802bf50cf7300c1f718dad5e2a5a432726a1d90a7888cdc4f88a2f46366449f0ca9a5992c3d09f24c0ceb155474b4b603b6655373b#npm:10.45.2"],\
+          ["@trpc/server", "npm:10.45.2"],\
+          ["@types/trpc__server", null]\
+        ],\
+        "packagePeers": [\
+          "@trpc/server",\
+          "@types/trpc__server"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@trpc/server", [\
+      ["npm:10.45.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/@trpc-server-npm-10.45.2-02872f1627-10c0.zip/node_modules/@trpc/server/",\
+        "packageDependencies": [\
+          ["@trpc/server", "npm:10.45.2"]\
         ],\
         "linkType": "HARD"\
       }]\
