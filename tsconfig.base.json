@@ -17,6 +17,10 @@
     "isolatedModules": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "paths": {
+      "@server/*": ["./server/daehwahap-server/src/*"],
+      "@webView/*": ["./web/daehwahap-webview/src/*"]
+    }
   }
 }

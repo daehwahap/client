@@ -7,6 +7,9 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "dependencies": {
+    "@daehwahap/daehwahap-server": "workspace:^"
+  },
   "devDependencies": {
     "@daehwahap/eslint-config": "*",
     "prettier": "^3.2.5",

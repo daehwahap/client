@@ -528,6 +528,7 @@ __metadata:
     "@nestjs/schematics": "npm:^10.0.0"
     "@nestjs/testing": "npm:^10.0.0"
     "@prisma/client": "npm:^5.12.1"
+    "@trpc/server": "npm:^10.45.2"
     "@types/eslint": "npm:^8"
     "@types/express": "npm:^4.17.17"
     "@types/jest": "npm:^29.5.2"
@@ -555,6 +556,8 @@ __metadata:
   resolution: "@daehwahap/daehwahap-webview@workspace:web/daehwahap-webview"
   dependencies:
     "@daehwahap/eslint-config": "workspace:^"
+    "@trpc/client": "npm:^10.45.2"
+    "@trpc/server": "npm:^10.45.2"
     "@types/eslint": "npm:^8"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
@@ -1425,6 +1428,22 @@ __metadata:
   version: 0.23.0
   resolution: "@tootallnate/quickjs-emscripten@npm:0.23.0"
   checksum: 10c0/2a939b781826fb5fd3edd0f2ec3b321d259d760464cf20611c9877205aaca3ccc0b7304dea68416baa0d568e82cd86b17d29548d1e5139fa3155a4a86a2b4b49
+  languageName: node
+  linkType: hard
+
+"@trpc/client@npm:^10.45.2":
+  version: 10.45.2
+  resolution: "@trpc/client@npm:10.45.2"
+  peerDependencies:
+    "@trpc/server": 10.45.2
+  checksum: 10c0/15c277a35f15108346902507c7f04fdcdf008d7fd8232f28806518af555ce72273a06d024b727494684c9d8752949b3e334437f321a7f3228be6411511b553f0
+  languageName: node
+  linkType: hard
+
+"@trpc/server@npm:^10.45.2":
+  version: 10.45.2
+  resolution: "@trpc/server@npm:10.45.2"
+  checksum: 10c0/c6bff389f7c4e273101834d55c917c2fe271189ee17985b79e4a925920afc39d45da3f247611cd7f8aeca3a461739118c621679bd183e9ad8765676e85c95712
   languageName: node
   linkType: hard
 
