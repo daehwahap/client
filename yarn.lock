@@ -510,6 +510,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@daehwahap/client@workspace:."
   dependencies:
+    "@daehwahap/daehwahap-server": "workspace:^"
     "@daehwahap/eslint-config": "npm:*"
     prettier: "npm:^3.2.5"
     turbo: "npm:latest"
@@ -517,7 +518,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@daehwahap/daehwahap-server@workspace:server/daehwahap-server":
+"@daehwahap/daehwahap-server@workspace:^, @daehwahap/daehwahap-server@workspace:server/daehwahap-server":
   version: 0.0.0-use.local
   resolution: "@daehwahap/daehwahap-server@workspace:server/daehwahap-server"
   dependencies:
@@ -555,6 +556,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@daehwahap/daehwahap-webview@workspace:web/daehwahap-webview"
   dependencies:
+    "@daehwahap/daehwahap-server": "workspace:^"
     "@daehwahap/eslint-config": "workspace:^"
     "@trpc/client": "npm:^10.45.2"
     "@trpc/server": "npm:^10.45.2"

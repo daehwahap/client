@@ -18,9 +18,5 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "paths": {
-      "@server/*": ["./server/daehwahap-server/src/*"],
-      "@webView/*": ["./web/daehwahap-webview/src/*"]
-    }
   }
 }
