@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { TrpcModule } from './trpc/trpc.module';
 
 @Module({
-  imports: [ TrpcModule],
+  imports: [TrpcModule],
   controllers: [AppController],
   providers: [AppService],
 })
