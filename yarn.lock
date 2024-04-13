@@ -560,6 +560,7 @@ __metadata:
     tsconfig-paths: "npm:^4.2.0"
     typescript: "npm:5.4.3"
     zod: "npm:^3.22.4"
+    zod-prisma-types: "npm:^3.1.6"
   languageName: unknown
   linkType: soft
 
@@ -1385,6 +1386,15 @@ __metadata:
     "@prisma/engines-version": "npm:5.12.0-21.473ed3124229e22d881cb7addf559799debae1ab"
     "@prisma/get-platform": "npm:5.12.1"
   checksum: 10c0/f07cc8e98d9c78c881256c2626f72101dd93df13d7702181a566812728eb4dffab558d2d437ca0ff66db8c81f30b41789a56c59602b229d645dbec021af99c1f
+  languageName: node
+  linkType: hard
+
+"@prisma/generator-helper@npm:^5.5.2":
+  version: 5.12.1
+  resolution: "@prisma/generator-helper@npm:5.12.1"
+  dependencies:
+    "@prisma/debug": "npm:5.12.1"
+  checksum: 10c0/0f9ee8a494aa156f2cd6030faff7e4ace8c2e8177d63aed13aff7fc3b6a08e6d4d82c14ffbd82016d236badfcd2ce73eea429853ce3474ce847dc66e0bb6277b
   languageName: node
   linkType: hard
 
@@ -3473,6 +3483,13 @@ __metadata:
   version: 4.6.0
   resolution: "co@npm:4.6.0"
   checksum: 10c0/c0e85ea0ca8bf0a50cbdca82efc5af0301240ca88ebe3644a6ffb8ffe911f34d40f8fbcf8f1d52c5ddd66706abd4d3bfcd64259f1e8e2371d4f47573b0dc8c28
+  languageName: node
+  linkType: hard
+
+"code-block-writer@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "code-block-writer@npm:12.0.0"
+  checksum: 10c0/ced73cdc466bff968bba9e8e32340d88420d25a229b9269f7425a10a7c2c9a12ca702dcb601b2462b96472d354f021cf66e552179fcbe30c8f7ecd0173c5fa07
   languageName: node
   linkType: hard
 
@@ -10438,6 +10455,20 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: 10c0/dceb44c28578b31641e13695d200d34ec4ab3966a5729814d5445b194933c096b7ced71494ce53a0e8820685d1d010df8b2422e5bf2cdea7e469d97ffbea306f
+  languageName: node
+  linkType: hard
+
+"zod-prisma-types@npm:^3.1.6":
+  version: 3.1.6
+  resolution: "zod-prisma-types@npm:3.1.6"
+  dependencies:
+    "@prisma/generator-helper": "npm:^5.5.2"
+    code-block-writer: "npm:^12.0.0"
+    lodash: "npm:^4.17.21"
+    zod: "npm:^3.22.4"
+  bin:
+    zod-prisma-types: dist/bin.js
+  checksum: 10c0/cef986b25a0c0a081049f7c36d07bc26fe757e43d19aca25b16b71236010f768591e9cc401798e2c1d676e6dccfc303c9c0edef0a407756837c25b6987b8695e
   languageName: node
   linkType: hard
 

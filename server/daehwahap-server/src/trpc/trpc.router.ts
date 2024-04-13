@@ -10,7 +10,7 @@ export class TrpcRouter {
     private readonly userController: UserController,
   ) {}
 
-  mergeRouter = this.trpcService.mergeRouters(this.userController.userController)
+  mergeRouter = this.trpcService.mergeRouters(this.userController.router)
 
   async applyMiddleware(app: INestApplication) {
     app.use(

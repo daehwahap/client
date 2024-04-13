@@ -1,21 +1,16 @@
+import { UserRepository } from './user.repository'
 import { Injectable } from '@nestjs/common'
 import { TrpcService } from '../trpc.service'
-import { z } from 'zod'
+import { UserCreateInputSchema } from 'prisma/dto/zod'
 
 @Injectable()
 export class UserService {
-  constructor(private readonly trpcService: TrpcService) {}
+  constructor(
+    private readonly trpcService: TrpcService,
+    private readonly userRepository: UserRepository,
+  ) {}
 
-  getUser = this.trpcService.procedure
-    .input(
-      z.object({
-        name: z.string().optional(),
-      }),
-    )
-    .mutation(({ input }) => {
-      const { name } = input
-      return {
-        greeting: `Hello ${name ? name : `Bilbo`}`,
-      }
-    })
+  createUser = this.trpcService.procedure.input(UserCreateInputSchema).mutation(({ input }) => {
+    this.userRepository.createUser(input)
+  })
 }

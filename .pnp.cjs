@@ -1038,7 +1038,8 @@ const RAW_RUNTIME_STATE =
           ["ts-node", "virtual:370dfca81dbf286eb0a5b42abeb5507e043c3ba2c3839ff0e45d49f96b030a8fdb8bea6ad74ef836a00cf773d8a5ba0c6a86f3a4f62909c3f8e8a1ca8be3d802#npm:10.9.2"],\
           ["tsconfig-paths", "npm:4.2.0"],\
           ["typescript", "patch:typescript@npm%3A5.4.3#optional!builtin<compat/typescript>::version=5.4.3&hash=5adc0c"],\
-          ["zod", "npm:3.22.4"]\
+          ["zod", "npm:3.22.4"],\
+          ["zod-prisma-types", "npm:3.1.6"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -2193,6 +2194,16 @@ const RAW_RUNTIME_STATE =
           ["@prisma/debug", "npm:5.12.1"],\
           ["@prisma/engines-version", "npm:5.12.0-21.473ed3124229e22d881cb7addf559799debae1ab"],\
           ["@prisma/get-platform", "npm:5.12.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@prisma/generator-helper", [\
+      ["npm:5.12.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/@prisma-generator-helper-npm-5.12.1-4323375dd2-10c0.zip/node_modules/@prisma/generator-helper/",\
+        "packageDependencies": [\
+          ["@prisma/generator-helper", "npm:5.12.1"],\
+          ["@prisma/debug", "npm:5.12.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4911,6 +4922,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/co-npm-4.6.0-03f2d1feb6-10c0.zip/node_modules/co/",\
         "packageDependencies": [\
           ["co", "npm:4.6.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["code-block-writer", [\
+      ["npm:12.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/code-block-writer-npm-12.0.0-943b9e5c78-10c0.zip/node_modules/code-block-writer/",\
+        "packageDependencies": [\
+          ["code-block-writer", "npm:12.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -13500,6 +13520,19 @@ const RAW_RUNTIME_STATE =
       ["npm:3.22.4", {\
         "packageLocation": "../../../.yarn/berry/cache/zod-npm-3.22.4-2bccbc41b4-10c0.zip/node_modules/zod/",\
         "packageDependencies": [\
+          ["zod", "npm:3.22.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["zod-prisma-types", [\
+      ["npm:3.1.6", {\
+        "packageLocation": "../../../.yarn/berry/cache/zod-prisma-types-npm-3.1.6-7cf17ce008-10c0.zip/node_modules/zod-prisma-types/",\
+        "packageDependencies": [\
+          ["zod-prisma-types", "npm:3.1.6"],\
+          ["@prisma/generator-helper", "npm:5.12.1"],\
+          ["code-block-writer", "npm:12.0.0"],\
+          ["lodash", "npm:4.17.21"],\
           ["zod", "npm:3.22.4"]\
         ],\
         "linkType": "HARD"\

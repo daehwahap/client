@@ -10,7 +10,7 @@ export class UserController {
     private readonly UserService: UserService,
   ) {}
 
-  userController = this.trpcService.router({
-    getUser: this.UserService.getUser,
+  router = this.trpcService.router({
+    createUser: this.UserService.createUser,
   })
 }
