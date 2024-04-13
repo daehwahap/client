@@ -1,7 +1,7 @@
 import { trpc } from '../../trpc'
 
 const TrpcPage = async () => {
-  const { greeting } = await trpc.hello.query({ name: `Tom` });
+  const { greeting } = await trpc.getUser.mutate({ name: `Tom` })
 
   return <div>{greeting}</div>
 }

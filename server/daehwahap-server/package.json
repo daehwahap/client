@@ -32,9 +32,8 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@yarnpkg/pnpify": "^4.0.1",
-    "@nestjs/mapped-types": "*",
     "@nestjs/cli": "^10.0.0",
+    "@nestjs/mapped-types": "*",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
     "@types/eslint": "^8",
@@ -42,6 +41,7 @@
     "@types/jest": "^29.5.2",
     "@types/node": "^20.3.1",
     "@types/supertest": "^6.0.0",
+    "@yarnpkg/pnpify": "^4.0.1",
     "dotenv": "^16.4.5",
     "eslint": "8.57.0",
     "jest": "^29.5.0",
