@@ -1,7 +1,6 @@
-import { UserCreateInputSchema } from 'prisma/dto/zod'
 import { Injectable } from '@nestjs/common'
-import { Prisma } from 'prisma/lib'
 import { PrismaService } from 'src/prisma/prisma.service'
+import { Prisma } from '@prisma/client'
 
 @Injectable()
 export class UserRepository {
