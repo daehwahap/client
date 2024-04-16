@@ -7,7 +7,6 @@
 generator client {
   provider = "prisma-client-js"
   previewFeactures = ["relationMode"]
-  output = "./lib"
 }
 
 datasource db {
