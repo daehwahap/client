@@ -2,6 +2,10 @@
   "name": "@daehwahap/shared",
   "version": "0.0.1",
   "private": true,
+  "packageManager": "yarn@4.1.1",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
