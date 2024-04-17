@@ -1,12 +1,8 @@
 'use client'
 
 import { motion, AnimatePresence } from 'framer-motion'
-import { createPortal } from '@daehwahap/global-components/src/utils'
 import { useEffect } from 'react'
-import {
-  GlobalComponentContextProvider,
-  useGlobalComponentContext,
-} from '@daehwahap/global-components/src/provider'
+import { createPortal, useGlobalComponentContext } from '@daehwahap/global-components'
 
 interface ToastProps {
   text: string

@@ -1,6 +1,6 @@
 import { createContext, createElement, createRef } from 'react'
 import { GlobalComponentContextType } from '../types'
-import { globalComponentManager } from '../manager/GlobalComponentManager'
+import { globalComponentManager } from '../manager'
 import { GlobalComponentContextProvider } from '../provider'
 
 export const createPortal = <T>(Component: React.FC<T>) => {

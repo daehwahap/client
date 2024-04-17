@@ -1,6 +1,6 @@
 'use client'
 
-import { ReactNode, createElement } from 'react'
+import { ReactNode } from 'react'
 import Toast from '../components/Toast'
 
 type HOCProviderProps = { children: ReactNode }
