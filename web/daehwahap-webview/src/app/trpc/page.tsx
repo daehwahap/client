@@ -1,9 +1,11 @@
-import { trpc } from '../../trpc'
+import { TestButton } from '../../components/TestButton'
 
 const TrpcPage = async () => {
-  const { greeting } = await trpc.createUser.mutate({ greeting: 'aa' })
-
-  return <div>{greeting}</div>
+  return (
+    <div style={{ backgroundColor: 'blue', height: '100vh' }}>
+      <TestButton />
+    </div>
+  )
 }
 
 export default TrpcPage
