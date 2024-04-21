@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-api": "yarn run openapi-generator-cli generate -i ./src/apis/swagger.json -g typescript-axios -o ./src/apis/api-types --skip-validate-spec" 
   },
   "dependencies": {
     "@daehwahap/daehwahap-server": "workspace:^",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@daehwahap/eslint-config": "workspace:^",
+    "@openapitools/openapi-generator-cli": "^2.13.1",
     "@types/eslint": "^8",
     "@types/node": "^20",
     "@types/react": "^18",

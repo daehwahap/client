@@ -1,0 +1,67 @@
+{
+    "openapi": "3.1.0",
+    "servers": [
+      {
+        "url": "http://localhost:3000",
+        "description": "Local Server"
+      }
+    ],
+    "info": {
+      "version": "0.0.1",
+      "title": "server",
+      "description": "",
+      "license": {
+        "name": "UNLICENSED"
+      }
+    },
+    "paths": {
+      "/api": {
+        "get": {
+          "tags": [],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/hello": {
+        "get": {
+          "tags": [],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {},
+      "securitySchemes": {
+        "bearer": {
+          "type": "apiKey",
+          "name": "Authorization",
+          "in": "header"
+        }
+      }
+    },
+    "tags": [],
+    "x-samchon-emended": true
+  }
