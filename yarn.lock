@@ -560,6 +560,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@daehwahap/daehwahap-webview@workspace:web/daehwahap-webview"
   dependencies:
+    "@daehwahap/daehwahap-server": "workspace:^"
     "@daehwahap/eslint-config": "workspace:^"
     "@trpc/client": "npm:^10.45.2"
     "@trpc/server": "npm:^10.45.2"
