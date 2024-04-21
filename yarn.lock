@@ -511,6 +511,8 @@ __metadata:
   dependencies:
     "@daehwahap/daehwahap-server": "workspace:^"
     "@daehwahap/eslint-config": "npm:*"
+    "@types/eslint": "npm:^8"
+    eslint: "npm:8.57.0"
     prettier: "npm:^3.2.5"
     turbo: "npm:latest"
     typescript: "npm:^5.4.3"
