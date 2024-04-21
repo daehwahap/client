@@ -24,5 +24,12 @@ module.exports = {
   ],
   rules: {
     'import/prefer-default-export': 'off',
+    rules: {
+      'import/prefer-default-export': 'off',
+      'react/function-component-definition': [
+        2,
+        { namedComponents: ['arrow-function', 'function-declaration'] },
+      ],
+    },
   },
 }
