@@ -1,9 +1,10 @@
 import { trpc } from '../../trpc'
 
- const TrpcPage = async() =>  {
-  const { greeting } = await trpc.createUser.mutate({ greeting: 'aa' })
+const TrpcPage = async () => {
+  await trpc.createUser.mutate({ email: 'aa', name: 'aa', password: 'aa' })
 
-  return <div>{greeting}</div>
+  // return <div>{greeting}</div>
+  return null
 }
 
 export default TrpcPage
