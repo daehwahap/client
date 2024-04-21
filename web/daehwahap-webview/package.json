@@ -10,7 +10,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@daehwahap/daehwahap-server": "workspace:^",
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
     "next": "14.1.4",

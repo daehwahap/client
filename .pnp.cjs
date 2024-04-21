@@ -1032,7 +1032,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./web/daehwahap-webview/",\
         "packageDependencies": [\
           ["@daehwahap/daehwahap-webview", "workspace:web/daehwahap-webview"],\
-          ["@daehwahap/daehwahap-server", "workspace:server/daehwahap-server"],\
           ["@daehwahap/eslint-config", "virtual:f0d0cd5aaece2ba2f3a78185b2e418b368495e7a6b1c81897edad81a0feb0eb68d6a24daa2f2a094f38e4769fa1fcad5d2a9dbb29adf266de2c4288673c2e748#workspace:packages/eslint-config"],\
           ["@trpc/client", "virtual:39545a4d19bf23f85195bd802bf50cf7300c1f718dad5e2a5a432726a1d90a7888cdc4f88a2f46366449f0ca9a5992c3d09f24c0ceb155474b4b603b6655373b#npm:10.45.2"],\
           ["@trpc/server", "npm:10.45.2"],\
