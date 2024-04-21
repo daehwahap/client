@@ -46,7 +46,6 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@daehwahap/daehwahap-server", "workspace:server/daehwahap-server"],\
           ["@daehwahap/eslint-config", "virtual:f0d0cd5aaece2ba2f3a78185b2e418b368495e7a6b1c81897edad81a0feb0eb68d6a24daa2f2a094f38e4769fa1fcad5d2a9dbb29adf266de2c4288673c2e748#workspace:packages/eslint-config"],\
           ["@types/eslint", "npm:8.56.6"],\
           ["eslint", "npm:8.57.0"],\
@@ -977,7 +976,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@daehwahap/client", "workspace:."],\
-          ["@daehwahap/daehwahap-server", "workspace:server/daehwahap-server"],\
           ["@daehwahap/eslint-config", "virtual:f0d0cd5aaece2ba2f3a78185b2e418b368495e7a6b1c81897edad81a0feb0eb68d6a24daa2f2a094f38e4769fa1fcad5d2a9dbb29adf266de2c4288673c2e748#workspace:packages/eslint-config"],\
           ["@types/eslint", "npm:8.56.6"],\
           ["eslint", "npm:8.57.0"],\

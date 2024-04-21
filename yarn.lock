@@ -509,7 +509,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@daehwahap/client@workspace:."
   dependencies:
-    "@daehwahap/daehwahap-server": "workspace:^"
     "@daehwahap/eslint-config": "npm:*"
     "@types/eslint": "npm:^8"
     eslint: "npm:8.57.0"
