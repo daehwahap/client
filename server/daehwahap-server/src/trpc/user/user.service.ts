@@ -1,7 +1,7 @@
 import { UserRepository } from './user.repository'
 import { Injectable } from '@nestjs/common'
 import { TrpcService } from '../trpc.service'
-import { UserCreateInputSchema } from 'prisma/dto/zod'
+import { UserCreateInputSchema } from 'src/prisma/dto'
 
 @Injectable()
 export class UserService {
