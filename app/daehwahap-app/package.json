@@ -12,6 +12,7 @@
   "dependencies": {
     "@daehwahap/daehwahap-server": "workspace:^",
     "@trpc/client": "^10.45.2",
+    "@trpc/server": "^10.45.2",
     "react": "18.2.0",
     "react-native": "0.73.6"
   },
