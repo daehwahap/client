@@ -1,9 +1,16 @@
+'use client'
+
 import { trpc } from '../../trpc'
 
- const TrpcPage = async() =>  {
-  const { greeting } = await trpc.createUser.mutate({ greeting: 'aa' })
+const TrpcPage = async () => {
+  const handleSignIn = await trpc.createUser.mutate({ email: 'aa', password: 'aa', name: 'aa' })
 
-  return <div>{greeting}</div>
+  return (
+    <div>
+      <button onClick={handleSignIn}>회원가이버</button>
+      <button onClick={handleSignIn}>회원가이버</button>
+    </div>
+  )
 }
 
 export default TrpcPage
