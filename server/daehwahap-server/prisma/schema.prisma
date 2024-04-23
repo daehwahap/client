@@ -6,7 +6,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  previewFeactures = ["relationMode"]
 }
 
 datasource db {
@@ -17,7 +16,7 @@ datasource db {
 
 generator zod {
   provider = "zod-prisma-types"
-  output   = "./dto/zod"
+  output   = "../src/prisma/dto"
 }
 
 model User {
