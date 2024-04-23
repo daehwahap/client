@@ -22,4 +22,14 @@ module.exports = {
     // Force ESLint to detect .tsx files
     { files: ['*.js?(x)', '*.ts?(x)'] },
   ],
+  rules: {
+    'import/prefer-default-export': 'off',
+    rules: {
+      'import/prefer-default-export': 'off',
+      'react/function-component-definition': [
+        2,
+        { namedComponents: ['arrow-function', 'function-declaration'] },
+      ],
+    },
+  },
 }
