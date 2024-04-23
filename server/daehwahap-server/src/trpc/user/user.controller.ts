@@ -10,6 +10,7 @@ export class UserController {
   ) {
     this.router = this.trpcService.router({
       createUser: this.UserService.createUser,
+      getUser: this.UserService.getUser,
     })
   }
 

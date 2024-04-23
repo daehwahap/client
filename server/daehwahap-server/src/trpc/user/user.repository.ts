@@ -13,6 +13,7 @@ export class UserRepository {
   }
 
   async getUser() {
+    console.log('repository')
     return this.prismaService.user.findMany()
   }
 }

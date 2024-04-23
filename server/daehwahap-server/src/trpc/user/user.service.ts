@@ -19,11 +19,13 @@ export class UserService {
         name: z.string(),
       }),
     )
-    .mutation(({ input }) => {
-      this.userRepository.createUser(input)
+    .mutation(async ({ input }) => {
+      const signInUser = await this.userRepository.createUser(input)
+
+      
     })
 
-  getUser = this.trpcService.authProcedure.input(z.never()).query(() => {
+  getUser = this.trpcService.authProcedure.input(z.object({ aa: z.string() })).query(() => {
     return this.userRepository.getUser()
   })
 }

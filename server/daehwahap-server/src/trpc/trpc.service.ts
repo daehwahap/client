@@ -14,15 +14,17 @@ export class TrpcService {
       throw new TRPCError({ code: 'UNAUTHORIZED' })
     }
     // 여기서 디코딩하고 유저 받아주는 로직
+    console.log(req)
     const user = { userId: 'aa' }
     return user
   }
 
   trpc = initTRPC.context<typeof this.createContext>().create()
   auth = this.trpc.middleware(async ({ next, ctx }) => {
-    if (!ctx.userId) {
-      throw new TRPCError({ code: 'UNAUTHORIZED' })
-    }
+    console.log(ctx)
+    // if (!ctx.userId) {
+    //   throw new TRPCError({ code: 'UNAUTHORIZED' })
+    // }
     return next({ ctx })
   })
 
