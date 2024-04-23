@@ -11,7 +11,19 @@ export class UserService {
     private readonly userRepository: UserRepository,
   ) {}
 
-  createUser = this.trpcService.procedure.input(UserCreateInputSchema).mutation(({ input }) => {
-    this.userRepository.createUser(input)
+  createUser = this.trpcService.procedure
+    .input(
+      z.object({
+        email: z.string(),
+        password: z.string(),
+        name: z.string(),
+      }),
+    )
+    .mutation(({ input }) => {
+      this.userRepository.createUser(input)
+    })
+
+  getUser = this.trpcService.authProcedure.input(z.never()).query(() => {
+    return this.userRepository.getUser()
   })
 }

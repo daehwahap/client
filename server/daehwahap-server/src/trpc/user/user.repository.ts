@@ -11,4 +11,8 @@ export class UserRepository {
       data,
     })
   }
+
+  async getUser() {
+    return this.prismaService.user.findMany()
+  }
 }
