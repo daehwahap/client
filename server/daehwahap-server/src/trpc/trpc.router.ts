@@ -4,6 +4,7 @@ import * as trpcExpress from '@trpc/server/adapters/express'
 import { NodeHTTPHandlerOptions } from '@trpc/server/dist/adapters/node-http'
 import express from 'express'
 import { AnyRouter } from '@trpc/server'
+import { TrpcService } from './trpc.service'
 
 @Injectable()
 export class TrpcRouter {
